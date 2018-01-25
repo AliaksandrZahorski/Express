@@ -17,11 +17,6 @@ app.set('view engine', 'pug');
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(log);
 
-// router.use((req, res, next) => {
-//   console.log(req.method, req.url);
-//   next();
-// });
-//
 router.get('/blogs', (req, res) => {
   res.json({ ThothSays: 'GET /blogs' });
 });
